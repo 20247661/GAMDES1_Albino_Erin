@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bshlhqfyrfs11"]
+
+[node name="Main" type="Node2D" unique_id=646299725]
+
+[node name="Player" type="Sprite2D" parent="." unique_id=1848163149]
+
+[node name="Camera" type="Camera2D" parent="Player" unique_id=1442257580]
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=16165899]
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(5, 5)
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
