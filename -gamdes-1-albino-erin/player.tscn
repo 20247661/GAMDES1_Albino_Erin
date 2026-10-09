@@ -1,20 +1,18 @@
 [gd_scene format=3 uid="uid://0icc6536mudk"]
 
 [ext_resource type="Script" uid="uid://y30gxd0xsidu" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://blc1jms3pwh7l" path="res://butterbear-removebg-preview.png" id="2_onrkg"]
 
-[sub_resource type="Gradient" id="Gradient_g5fxk"]
-offsets = PackedFloat32Array(0.40710384, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_dx8ln"]
-gradient = SubResource("Gradient_g5fxk")
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tjh70"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7eth4"]
+size = Vector2(82.5, 99)
 
 [node name="Player" type="CharacterBody2D" unique_id=1955320891]
+position = Vector2(429, 512)
 script = ExtResource("1_4flbx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1829266707]
-texture = SubResource("GradientTexture2D_dx8ln")
+texture = ExtResource("2_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=824915281]
-shape = SubResource("RectangleShape2D_tjh70")
+position = Vector2(-7, 3)
+shape = SubResource("RectangleShape2D_7eth4")
